@@ -132,7 +132,7 @@
           <label for="plan">Formule qui vous intéresse</label><select id="plan" name="plan"><option>Je souhaite en discuter</option><option>Offre pilote — 90 €</option><option>Visibilité — 150 €/mois</option><option>Croissance — 250 à 300 €/mois</option></select>
           <label for="message">Votre besoin (facultatif)</label><textarea id="message" name="message" placeholder="Ex. Nous souhaitons publier plus régulièrement…"></textarea>
           <button class="btn gold" type="submit">Préparer mon e-mail ↗</button>
-          <p class="form-help">Ce formulaire ouvre votre application e-mail : il ne stocke pas les données et ne les envoie pas automatiquement. Configurez votre adresse dans le fichier avant publication.</p>
+          <p class="form-help">Ce formulaire ouvre Gmail pour préparer un e-mail. Le visiteur doit être connecté à Gmail puis appuyer sur Envoyer ; le site ne transmet pas les données automatiquement.</p>
           <p id="formStatus" class="form-help" role="status"></p>
         </form>
       </div>
@@ -142,7 +142,7 @@
   <footer><div class="wrap footer-inner"><a class="brand" href="#accueil">Mami<span>•</span>Design</a><span>Création de contenus pour restaurants · Travail à distance</span><div class="footer-links"><a href="#creations">Portfolio</a><a href="#tarifs">Tarifs</a><a href="#contact">Contact</a></div></div></footer>
   <script>
     // AVANT PUBLICATION : remplace cette adresse par ton adresse e-mail professionnelle.
-    const CONTACT_EMAIL = "REMPLACER-PAR-VOTRE-EMAIL@exemple.com";
+    const CONTACT_EMAIL = "mam itianarabarison2@gmail.com".replace(" ", "");
     const menuBtn = document.getElementById("menuBtn");
     const navlinks = document.getElementById("navlinks");
     menuBtn.addEventListener("click", () => {
@@ -171,7 +171,10 @@
         `Formule : ${data.get("plan")}`,
         `Besoin : ${data.get("message") || "Non précisé"}`
       ].join("\n");
-      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const encodedSubject = encodeURIComponent(subject);
+      const encodedBody = encodeURIComponent(body);
+      // Open Gmail's compose page even if the visitor has no mail app configured.
+      window.location.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(CONTACT_EMAIL)}&su=${encodedSubject}&body=${encodedBody}`;
     });
   </script>
 </body>
