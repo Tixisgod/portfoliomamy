@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="Mami•Design accompagne les restaurants indépendants dans la création de contenus et la gestion de Facebook et Instagram. 8 publications par mois à partir de 150 €.">
+  <title>Mami•Design — Des contenus qui donnent faim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#102a43;--ink:#17324d;--cream:#fbf8f1;--paper:#fffdf8;--gold:#f2b83e;--sage:#dce9df;--muted:#64748b;--line:#e7e1d6;--radius:22px;--shadow:0 18px 55px rgba(16,42,67,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.6}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(251,248,241,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(231,225,214,.8)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:700;letter-spacing:-.04em;font-size:1.3rem;color:var(--navy)}.brand span{color:#b67b10}.navlinks{display:flex;gap:25px;align-items:center;font-size:.92rem}.navlinks a:hover{color:#a56d00}.menu-btn{display:none;border:1px solid var(--line);background:var(--paper);padding:8px 12px;border-radius:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--navy);color:#fff;border:1px solid var(--navy);padding:13px 19px;border-radius:999px;font-weight:700;font-size:.94rem;transition:.2s;cursor:pointer}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px #102a4324}.btn.gold{background:var(--gold);border-color:var(--gold);color:var(--navy)}.btn.outline{background:transparent;color:var(--navy)}.btn.small{padding:10px 15px;font-size:.87rem}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:700;color:#94620b}.eyebrow:before{content:"";width:24px;height:2px;background:var(--gold)}
+    h1,h2,h3,p{margin-top:0}h1,h2,.serif{font-family:"Playfair Display",Georgia,serif;letter-spacing:-.035em}h1{font-size:clamp(2.8rem,6vw,5.2rem);line-height:1.02;margin:18px 0 20px;max-width:680px}h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.12;margin:12px 0 15px}h3{line-height:1.25}.lead{font-size:1.12rem;color:#43576b;max-width:610px}.muted{color:var(--muted)}.section{padding:92px 0}.section-head{max-width:680px;margin-bottom:36px}.section-head p{color:var(--muted);font-size:1.04rem}
+    .hero{padding:66px 0 78px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}.hero-copy .btns{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 22px}.trustline{display:flex;align-items:center;gap:10px;font-size:.88rem;color:var(--muted)}.dot{width:9px;height:9px;border-radius:50%;background:#4f8b62;box-shadow:0 0 0 5px #4f8b6218}.hero-art{position:relative;min-height:500px}.hero-photo{position:absolute;inset:12px 20px 35px 30px;width:calc(100% - 50px);height:calc(100% - 47px);object-fit:cover;border-radius:160px 160px 28px 28px;box-shadow:var(--shadow)}.floating-card{position:absolute;background:var(--paper);padding:16px 18px;border-radius:17px;box-shadow:var(--shadow);max-width:205px}.floating-card strong{display:block;font-size:1.2rem;color:var(--navy)}.floating-card span{font-size:.83rem;color:var(--muted)}.card-one{left:0;top:48px}.card-two{right:0;bottom:5px}.sticker{position:absolute;right:3px;top:28px;background:var(--gold);color:var(--navy);width:94px;height:94px;border-radius:50%;display:grid;place-items:center;text-align:center;font-weight:800;line-height:1.15;transform:rotate(9deg);font-size:.9rem}
+    .strip{background:var(--navy);color:white;padding:18px 0}.strip-inner{display:flex;justify-content:space-between;gap:22px;align-items:center;flex-wrap:wrap}.strip strong{font-size:1.02rem}.strip span{color:#d8e1ea;font-size:.9rem}
+    .benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.benefit{padding:25px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius)}.icon{width:44px;height:44px;border-radius:14px;background:#f8e8c3;display:grid;place-items:center;font-size:1.25rem;margin-bottom:18px}.benefit:nth-child(2) .icon{background:var(--sage)}.benefit:nth-child(3) .icon{background:#f7dfda}.benefit p{color:var(--muted);margin-bottom:0}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.work{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 7px 22px #102a4308}.work img{width:100%;height:290px;object-fit:cover;transition:transform .4s}.work:hover img{transform:scale(1.035)}.work-copy{padding:18px 19px}.work-copy small{color:#94620b;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem}.work-copy h3{margin:7px 0}.work-copy p{font-size:.9rem;color:var(--muted);margin:0}.note{font-size:.85rem;color:var(--muted);margin-top:18px;padding:14px 16px;background:#f2ede3;border-radius:12px}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:2px solid var(--gold);padding-top:18px}.step-num{font-weight:800;color:#b67b10;font-size:.8rem;letter-spacing:.1em}.step h3{margin:9px 0}.step p{color:var(--muted);font-size:.92rem}
+    .pricing{background:#f3efe6}.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.price-card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:27px;display:flex;flex-direction:column;position:relative}.price-card.featured{border:2px solid var(--gold);box-shadow:var(--shadow);transform:translateY(-8px)}.ribbon{position:absolute;top:-14px;left:22px;background:var(--gold);border-radius:999px;padding:5px 12px;font-size:.73rem;font-weight:800}.price-label{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800;color:#8a651b}.price{font-size:2.45rem;letter-spacing:-.06em;font-weight:800;color:var(--navy);margin:9px 0 0}.price small{font-size:.88rem;letter-spacing:0;font-weight:600}.price-desc{color:var(--muted);font-size:.91rem;min-height:48px}.checks{list-style:none;padding:0;margin:18px 0 24px;display:grid;gap:10px;font-size:.92rem}.checks li:before{content:"✓";font-weight:900;color:#39734c;margin-right:10px}.price-card .btn{margin-top:auto}.price-foot{font-size:.8rem;color:var(--muted);margin-top:14px}
+    .faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:55px}.faq-list details{border-bottom:1px solid var(--line);padding:17px 0}.faq-list summary{font-weight:700;cursor:pointer}.faq-list p{color:var(--muted);margin:12px 0 0}
+    .contact{background:var(--navy);color:white;border-radius:30px;padding:clamp(28px,5vw,58px);display:grid;grid-template-columns:1fr .85fr;gap:45px;align-items:center}.contact h2{color:white}.contact p{color:#d7e1eb}.contact .eyebrow{color:var(--gold)}.contact-box{background:white;color:var(--ink);padding:25px;border-radius:20px}.contact-box label{display:block;font-size:.84rem;font-weight:700;margin:12px 0 6px}.contact-box input,.contact-box select,.contact-box textarea{width:100%;font:inherit;border:1px solid #d8dee5;border-radius:10px;padding:12px;background:#fff}.contact-box textarea{min-height:100px;resize:vertical}.contact-box .btn{width:100%;margin-top:14px}.form-help{font-size:.78rem;color:var(--muted);margin:10px 0 0}
+    footer{padding:28px 0 38px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px;color:var(--muted);font-size:.85rem}.footer-links{display:flex;gap:18px}
+    @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:20px}.hero-copy{max-width:720px}.hero-art{min-height:450px;max-width:600px;width:100%;margin:auto}.benefits,.pricing-grid{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}.portfolio-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.faq-grid{grid-template-columns:1fr;gap:10px}.contact{grid-template-columns:1fr}.navlinks{gap:14px}}
+    @media(max-width:600px){.wrap{width:min(100% - 28px,1120px)}.nav{height:66px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;background:var(--cream);padding:18px 22px 22px;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.navlinks .btn{width:100%}.hero{padding:44px 0 52px}.hero-art{min-height:360px}.hero-photo{inset:10px 20px 20px 15px;width:calc(100% - 35px);height:calc(100% - 30px);border-radius:120px 120px 22px 22px}.floating-card{padding:11px 13px;max-width:160px}.floating-card strong{font-size:1rem}.floating-card span{font-size:.75rem}.sticker{width:74px;height:74px;font-size:.75rem}.section{padding:64px 0}.benefits,.pricing-grid,.portfolio-grid,.process-grid{grid-template-columns:1fr}.work img{height:260px}.price-card.featured{margin-top:8px}.price-desc{min-height:0}.strip-inner{align-items:flex-start;flex-direction:column;gap:5px}.contact{border-radius:22px;padding:24px}.footer-inner{flex-direction:column}.hero-copy .btns .btn{width:100%}h1{font-size:2.75rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#accueil" aria-label="Mami Design, accueil">Mami<span>•</span>Design</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
+      <nav class="navlinks" id="navlinks" aria-label="Navigation principale">
+        <a href="#creations">Créations</a><a href="#methode">Ma méthode</a><a href="#tarifs">Tarifs</a><a href="#contact" class="btn small">Parlons de votre restaurant ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Pour les restaurants indépendants</span>
+          <h1>Vos plats méritent <span style="color:#b67b10">d'être vus.</span></h1>
+          <p class="lead">Je vous aide à présenter vos plats de façon plus attractive et à publier régulièrement sur Facebook et Instagram, sans que vous ayez à gérer chaque publication.</p>
+          <div class="btns"><a class="btn gold" href="#contact">Recevoir un exemple personnalisé ↗</a><a class="btn outline" href="#creations">Voir les créations</a></div>
+          <div class="trustline"><span class="dot"></span> Création de contenus · Programmation · Suivi mensuel</div>
+        </div>
+        <div class="hero-art" aria-label="Exemples de contenus culinaires">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85" alt="Plat gourmand présenté dans une assiette" fetchpriority="high">
+          <div class="floating-card card-one"><strong>8 publications / mois</strong><span>Un calendrier pensé pour votre établissement.</span></div>
+          <div class="floating-card card-two"><strong>Vous gagnez du temps.</strong><span>Je prépare. Vous validez. Je programme.</span></div>
+          <div class="sticker">DU BON<br>CONTENU<br>CHAQUE MOIS</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip"><div class="wrap strip-inner"><strong>Votre cuisine. Votre identité. Une communication plus régulière.</strong><span>Accompagnement à distance · France et pays francophones</span></div></div>
+
+    <section class="section" id="benefices">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Ce que je vous apporte</span><h2>Une présence en ligne plus soignée, sans charge mentale supplémentaire.</h2><p>Vous restez concentré sur votre cuisine et vos clients. Je vous aide à garder une communication claire et cohérente.</p></div>
+        <div class="benefits">
+          <article class="benefit"><div class="icon">🍽️</div><h3>Mettre vos plats en valeur</h3><p>Des visuels harmonieux et des textes qui donnent envie de découvrir votre carte.</p></article>
+          <article class="benefit"><div class="icon">🗓️</div><h3>Publier avec régularité</h3><p>Un calendrier préparé à l'avance pour ne plus improviser chaque publication.</p></article>
+          <article class="benefit"><div class="icon">📊</div><h3>Suivre ce qui fonctionne</h3><p>Un bilan mensuel pour comprendre la portée et les interactions de vos contenus.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="creations" style="background:#fffdf8">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Portfolio</span><h2>Des exemples conçus pour donner envie.</h2><p>Trois directions de contenu pour un restaurant : mettre en avant un plat, présenter une spécialité et faire ressentir l'ambiance du lieu.</p></div>
+        <div class="portfolio-grid">
+          <article class="work"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=850&q=85" alt="Assiette colorée pour une publication de menu" loading="lazy"><div class="work-copy"><small>01 · Menu</small><h3>Le plat du jour</h3><p>Mettre en avant une assiette avec une légende claire et un appel à découvrir le menu.</p></div></article>
+          <article class="work"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=850&q=85" alt="Burger gourmand pour une publication de plat signature" loading="lazy"><div class="work-copy"><small>02 · Plat signature</small><h3>La spécialité maison</h3><p>Attirer le regard sur un plat phare et renforcer l'identité du restaurant.</p></div></article>
+          <article class="work"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=850&q=85" alt="Ambiance chaleureuse d'un restaurant" loading="lazy"><div class="work-copy"><small>03 · Expérience</small><h3>L'ambiance du lieu</h3><p>Montrer l'expérience, l'accueil et l'atmosphère au-delà de l'assiette.</p></div></article>
+        </div>
+        <p class="note">Note : ces visuels sont des exemples de direction créative. Ils ne constituent pas des missions clients ni des résultats commerciaux. Les créations finales sont adaptées à votre identité et aux photos que vous fournissez.</p>
+      </div>
+    </section>
+
+    <section class="section" id="methode">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Simple et organisé</span><h2>Comment se passe la collaboration ?</h2><p>Un processus clair, conçu pour fonctionner à distance sans multiplier les échanges.</p></div>
+        <div class="process-grid">
+          <article class="step"><span class="step-num">ÉTAPE 01</span><h3>On échange</h3><p>Vos objectifs, votre carte, votre clientèle et votre style sont définis ensemble.</p></article>
+          <article class="step"><span class="step-num">ÉTAPE 02</span><h3>Je prépare</h3><p>Je crée les textes et les visuels à partir de vos informations et de vos photos.</p></article>
+          <article class="step"><span class="step-num">ÉTAPE 03</span><h3>Vous validez</h3><p>Vous vérifiez les contenus et transmettez vos corrections dans le délai convenu.</p></article>
+          <article class="step"><span class="step-num">ÉTAPE 04</span><h3>Je programme</h3><p>Les publications sont planifiées, puis les performances sont résumées chaque mois.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="tarifs">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Tarifs transparents</span><h2>Choisissez la formule adaptée à votre rythme.</h2><p>Des forfaits de départ clairement définis. Le budget publicitaire, les shootings et la gestion des messages ne sont pas inclus.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card"><span class="price-label">Pour tester</span><div class="price">90 € <small>/ premier mois</small></div><p class="price-desc">Une formule pilote limitée aux deux premiers clients.</p><ul class="checks"><li>4 publications par mois</li><li>Visuels et textes</li><li>Facebook et Instagram</li><li>Programmation</li><li>Bilan simplifié</li></ul><a class="btn outline" href="#contact" data-plan="Pilote — 90 €">Choisir l'offre pilote</a><p class="price-foot">Offre ponctuelle, sous réserve de disponibilité.</p></article>
+          <article class="price-card featured"><span class="ribbon">Offre recommandée</span><span class="price-label">Pour être régulier</span><div class="price">150 € <small>/ mois</small></div><p class="price-desc">Une présence cohérente sur vos deux réseaux.</p><ul class="checks"><li>8 publications par mois</li><li>Visuels et textes personnalisés</li><li>Facebook et Instagram</li><li>Programmation et calendrier</li><li>Rapport mensuel</li><li>Un cycle de corrections</li></ul><a class="btn gold" href="#contact" data-plan="Visibilité — 150 €/mois">Choisir cette formule ↗</a><p class="price-foot">Le client fournit photos, carte, prix et informations vérifiées.</p></article>
+          <article class="price-card"><span class="price-label">Pour communiquer davantage</span><div class="price">250–300 € <small>/ mois</small></div><p class="price-desc">Pour les restaurants qui ont besoin d'un rythme plus soutenu.</p><ul class="checks"><li>12 publications par mois</li><li>Visuels et textes</li><li>Facebook et Instagram</li><li>Calendrier éditorial</li><li>Analyse et recommandations</li></ul><a class="btn outline" href="#contact" data-plan="Croissance — 250 à 300 €/mois">Discuter de mes besoins</a><p class="price-foot">Le périmètre exact est confirmé avant le démarrage.</p></article>
+        </div>
+        <p class="note">Les prix sont des tarifs de lancement à valider avec les premiers clients. Aucun nombre de ventes, de réservations ou d'abonnés n'est garanti.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap faq-grid">
+        <div><span class="eyebrow">Questions fréquentes</span><h2>Avant de commencer.</h2><p class="muted">Tout est défini en amont pour que vous sachiez ce qui est inclus.</p></div>
+        <div class="faq-list">
+          <details><summary>Dois-je fournir les photos ?</summary><p>Oui, idéalement. Vous fournissez les photos réelles de vos plats, votre carte, vos prix et les informations à jour. Si vous avez besoin d'une séance photo, elle peut être étudiée séparément.</p></details>
+          <details><summary>Gérez-vous les messages et les réservations ?</summary><p>La réponse aux messages, la modération et la gestion des réservations ne sont pas incluses dans les forfaits affichés. Une prestation complémentaire peut être discutée.</p></details>
+          <details><summary>Comment fonctionne le travail à distance ?</summary><p>Nous échangeons en ligne. Je prépare un calendrier, vous validez les contenus et je programme les publications après votre accord.</p></details>
+          <details><summary>Les publicités Facebook sont-elles incluses ?</summary><p>Non. Le budget publicitaire et la gestion de campagnes payantes sont distincts du forfait de création et de programmation.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" style="padding-top:10px">
+      <div class="wrap contact">
+        <div><span class="eyebrow">Parlons de votre restaurant</span><h2>Commençons par un exemple concret.</h2><p>Décrivez brièvement votre établissement. Je pourrai vous répondre avec les prochaines étapes et vous indiquer si le forfait correspond à vos besoins.</p><p><strong>Pas de promesse irréaliste :</strong> une méthode claire, des contenus préparés avec soin et un suivi régulier.</p></div>
+        <form class="contact-box" id="contactForm">
+          <h3>Votre demande</h3>
+          <label for="name">Votre prénom</label><input id="name" name="name" placeholder="Ex. Camille" required>
+          <label for="restaurant">Nom du restaurant</label><input id="restaurant" name="restaurant" placeholder="Ex. Le Petit Bistrot" required>
+          <label for="email">Votre e-mail</label><input id="email" name="email" type="email" placeholder="vous@restaurant.fr" required>
+          <label for="plan">Formule qui vous intéresse</label><select id="plan" name="plan"><option>Je souhaite en discuter</option><option>Offre pilote — 90 €</option><option>Visibilité — 150 €/mois</option><option>Croissance — 250 à 300 €/mois</option></select>
+          <label for="message">Votre besoin (facultatif)</label><textarea id="message" name="message" placeholder="Ex. Nous souhaitons publier plus régulièrement…"></textarea>
+          <button class="btn gold" type="submit">Préparer mon e-mail ↗</button>
+          <p class="form-help">Ce formulaire ouvre votre application e-mail : il ne stocke pas les données et ne les envoie pas automatiquement. Configurez votre adresse dans le fichier avant publication.</p>
+          <p id="formStatus" class="form-help" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><a class="brand" href="#accueil">Mami<span>•</span>Design</a><span>Création de contenus pour restaurants · Travail à distance</span><div class="footer-links"><a href="#creations">Portfolio</a><a href="#tarifs">Tarifs</a><a href="#contact">Contact</a></div></div></footer>
+  <script>
+    // AVANT PUBLICATION : remplace cette adresse par ton adresse e-mail professionnelle.
+    const CONTACT_EMAIL = "REMPLACER-PAR-VOTRE-EMAIL@exemple.com";
+    const menuBtn = document.getElementById("menuBtn");
+    const navlinks = document.getElementById("navlinks");
+    menuBtn.addEventListener("click", () => {
+      const open = navlinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(open));
+    });
+    navlinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      navlinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    }));
+    document.querySelectorAll("[data-plan]").forEach(button => button.addEventListener("click", () => {
+      document.getElementById("plan").value = button.dataset.plan;
+    }));
+    document.getElementById("contactForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (CONTACT_EMAIL.includes("REMPLACER-PAR-VOTRE-EMAIL")) {
+        document.getElementById("formStatus").textContent = "Le formulaire est prêt, mais l'adresse e-mail du propriétaire du site doit d'abord être configurée dans index.html.";
+        return;
+      }
+      const data = new FormData(event.currentTarget);
+      const subject = `Demande de renseignements — ${data.get("restaurant")}`;
+      const body = [
+        `Prénom : ${data.get("name")}`,
+        `Restaurant : ${data.get("restaurant")}`,
+        `E-mail : ${data.get("email")}`,
+        `Formule : ${data.get("plan")}`,
+        `Besoin : ${data.get("message") || "Non précisé"}`
+      ].join("\n");
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+  </script>
+</body>
+</html>
